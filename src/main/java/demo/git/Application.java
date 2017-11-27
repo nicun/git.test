@@ -10,11 +10,6 @@ import org.springframework.web.client.RestTemplate;
 @ComponentScan("demo.git")
 public class Application {
 
-//	@Bean
-//	public RestTemplate restTemplate(RestTemplateBuilder builder) {
-//		return builder.build();
-//	}
-
 	@Bean
 	public RestTemplate rest() {
 		return new RestTemplate();
@@ -24,14 +19,3 @@ public class Application {
 		SpringApplication.run(Application.class, args);
 	}
 }
-
-// private static final Logger log = LoggerFactory.getLogger(Application.class);
-
-// @Bean
-// public CommandLineRunner run(RestTemplate restTemplate) throws Exception {
-// return args -> {
-// User user = restTemplate.getForObject(
-// "https://api.github.com/users/octocat", User.class);
-// log.info(user.toString());
-// };
-// }
