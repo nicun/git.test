@@ -15,6 +15,13 @@ public class UserController {
 	@Autowired 
 	private UserService userService;
 	
+	@RequestMapping("/")
+	public String info(){
+		return UserService.instruction;
+		
+	}
+	
+	
 	@RequestMapping(value = "/{user}/info", method = RequestMethod.GET)
 	public User findUser(@PathVariable String user) throws Exception {
 		return userService.getInfo(user);
