@@ -11,7 +11,7 @@ import demo.git.entity.User;
 @Service
 public class UserService {
 	
-	public static String instruction = "{user}/info  - w miejsce {user} nazwa użytkownika <br/>"
+	public String instruction = "{user}/info  - w miejsce {user} nazwa użytkownika <br/>"
 			+ "Pobiera dane z API githuba, wyświetlając: <br/>"
 			+ "Identyfikator <br/>"
 			+ " Login <br/>"
@@ -20,7 +20,7 @@ public class UserService {
 			+ "url do avatara<br/>"
 			+ "data stworzenia <br/>";
 
-	
+		
 	@Autowired
 	RestTemplate restTemplate;
 	

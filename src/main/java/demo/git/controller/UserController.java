@@ -17,7 +17,7 @@ public class UserController {
 	
 	@RequestMapping("/")
 	public String info(){
-		return UserService.instruction;
+		return userService.instruction;
 		
 	}
 	
